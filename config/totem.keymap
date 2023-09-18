@@ -233,9 +233,9 @@ label= "ADJ"                               ;
             &kp LC(A)  &kp LC(Y)  &kp LC(S)  &kp LC(T)    &gs   		   &trans 		&kp LC(N)   &trans 		&kp LC(I)   &trans 
         //├──────────┼──────────┼──────────┼───────────┼────────────┤   ├────────────┼────────────┼──────────┼───────────┼──────────┤
         //│  UNDO    │  CUT     │  COPY    │  PASTE    │ WIN V      │   │            │ 			  │          | 			 │ 	\	│
-&TRANS      &kp LC(Z) &kp LC(X)  &kp LC(C)   &kp LC(V)   &kp LG(V)   	   &trans 		&trans 		 &trans 	 &trans		&kp BSLH	&TRANS
+&trans      &kp LC(Z) &kp LC(X)  &kp LC(C)   &kp LC(V)   &kp LG(V)   	   &trans 		&trans 		 &trans 	 &trans		&kp BSLH	&trans
         //╰──────────┴──────────┴──────────┼───────────┼────────────┤   ├────────────┼────────────┼──────────┴───────────┴──────────╯
-                                    &TRANS      &trans     &trans         &trans       &trans	   &TRANS
+                                    &trans      &trans     &trans         &trans       &trans	   &trans
         //                                   ╰───────────┴──────────╯   ╰──────────┴────────────╯
 			>;
 		};
