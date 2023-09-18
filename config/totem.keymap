@@ -31,7 +31,6 @@ quick-tap-ms = <125>;
 };
 
 / {
-     behaviors {
 		
 
 	    ht: hold-tap {
