@@ -67,12 +67,13 @@
            //tap dance
 		
 		gs: tap_dance_0 {
-			compatible = "zmk,behavior-tap-dance";
-			label = "GREENSHOT";
-			#binding-cells = <0>;
-			tapping-term-ms = <200>;
-			bindings = <&kp PSCRN>, <&kp LA(PSCRN)>;
+		compatible = "zmk,behavior-tap-dance";
+		label = "GREENSHOT";
+		#binding-cells = <0>;
+		tapping-term-ms = <200>;
+		bindings = <&kp PSCRN>, <&kp LA(PSCRN)>;
         };
+ };
 
     combos {
         compatible = "zmk,combos";
