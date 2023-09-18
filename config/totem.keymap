@@ -63,17 +63,45 @@ quick-tap-ms = <125>;
             tapping-term-ms = <200>;                        
             quick-tap-ms = <175>;
             bindings = <&sk>, <&kp>;
-        };  
+        };
+
+
+ 	macros {
+        srl: Layer2withShift {
+            label = "SHIFTED_RIGHT_LAYER";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+		wait-ms = <0>;
+		bindings
+		    = <&macro_press &mo RIG &kp LSHFT>
+		    , <&macro_pause_for_release>
+		    , <&macro_release &mo RIG &kp LSHFT>;
+        };
 
         
         //tap dance
 		gs: tap_dance_0 {
-            compatible = "zmk,behavior-tap-dance";
-            label = "GREENSHOT";
-            #binding-cells = <0>;
-            tapping-term-ms = <200>;
-            bindings = <&kp PSCRN>, <&kp LA(PSCRN)>;
-            };
+			compatible = "zmk,behavior-tap-dance";
+			label = "GREENSHOT";
+			#binding-cells = <0>;
+			tapping-term-ms = <200>;
+			bindings = <&kp PSCRN>, <&kp LA(PSCRN)>;
+        };
+		
+		fr: tap_dance_1 {
+			compatible = "zmk,behavior-tap-dance";
+			label = "FIND_REPLACE";
+			#binding-cells = <0>;
+			tapping-term-ms = <200>;
+			bindings = <&kp LC(F)>, <&kp LC(H)>;
+        };
+		
+		ltd: tap_dance_2 {
+			compatible = "zmk,behavior-tap-dance";
+			label = "RIGHT_THUMB";
+			#binding-cells = <0>;
+			tapping-term-ms = <200>;
+			bindings = <&mo RIG>, <&srl>;
  };
 
     combos {
