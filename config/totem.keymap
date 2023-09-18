@@ -169,7 +169,7 @@ label= "MAC";
 // ╷           ╷           ╷           ╷           ╷           ╷           ╷   ╷           ╷           ╷           ╷           ╷           ╷           ╷
 
                 &kp Q       &kp W       &kp F       &kp P       &kp B           &kp J       &kp L       &kp U       &kp Y       &kp SQT
-                 MHRML(A,     	 R,         S,			T)      &kp G          &kp M      HRMR(N,        E,         I,			O)
+                 MHRML(A,     	 R,         S,			T)      &kp G          &kp M      MHRMR(N,        E,         I,			O)
     &kp DEL       &kp Z       &kp X       &kp C       &kp D      &kp V           &kp K       &kp H       &kp COMMA   &kp DOT     &kp FSLH    &kp BSLH
                                         &kp TAB  &lt NAV RET   &ltq SHT BSPC       &meh LS(LA(LCTRL)) SPACE  &lt SYM MINUS &kp ESC
                         >;
@@ -193,7 +193,7 @@ label= "NUM"                              ;
         HRML(KP_DIVIDE, KP_MULTIPLY, PLUS,	  MINUS)   &none        &none     &kp N4     &kp N5     &kp N6     &kp DOT 
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│  BSPC    │          │  CAPS	   │    _     │          │   │          │ 1        │  2       │  3       │         │
-            &kp BSPC    &none	  &kp CAPS   &kp UNDER  &none           &none     &kp N1     &kp N2      &kp N3    &trans
+&trans      &kp BSPC    &none	  &kp CAPS   &kp UNDER  &none           &none     &kp N1     &kp N2      &kp N3    &trans    &trans
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
                                   &trans      &trans     &trans        &trans     &kp N0   &lt ADJ ESC
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
@@ -219,7 +219,7 @@ label= "SYM"                               ;
             HRML(LBKT,   RBKT,     LPAR,	   RPAR)    &none         &none      &kp LARW   &kp DARW   &kp UARW   &kp RARW 
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│  BSPC    │          │  {       │  }       │          │   │          │ HOME     │ PAGE DN  │ PAGE UP  │ END      │
-            &kp BSPC     &none      &kp LBRC   &kp RBRC   &none         &none      &kp HOME   &kp PG_DN  &kp PG_UP  &kp END 
+&trans      &kp BSPC     &none      &kp LBRC   &kp RBRC   &none         &none      &kp HOME   &kp PG_DN  &kp PG_UP  &kp END    &trans
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
                                  &lt ADJ TAB &trans      &trans         &trans      &trans    &trans  
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
