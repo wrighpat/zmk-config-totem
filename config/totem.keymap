@@ -23,24 +23,24 @@
 
 
 &mt {
-  quick-tap-ms = <100>;
-  global-quick-tap;
+ 
   flavor = "tap-preferred";
-  tapping-term-ms = <170>;
+  tapping-term-ms = <200>;
+quick-tap-ms = <125>;
 };
 
 / {
      behaviors {
 		
 
-	        ht: hold-tap {
-              compatible = "zmk,behavior-hold-tap";
-              label = "hold_tap";
-              #binding-cells = <2>;
-              flavor = "tap-preferred";
-              tapping-term-ms = <200>;
-              quick-tap-ms = <125>;
-              bindings = <&kp>, <&kp>;
+	    ht: hold-tap {
+            compatible = "zmk,behavior-hold-tap";
+            label = "hold_tap";
+            #binding-cells = <2>;
+            flavor = "tap-preferred";
+            tapping-term-ms = <200>;
+            quick-tap-ms = <125>;
+            bindings = <&kp>, <&kp>;
         };
 	
 		
@@ -64,15 +64,15 @@
             bindings = <&sk>, <&kp>;
         };  
 
-           //tap dance
-		
+        
+        //tap dance
 		gs: tap_dance_0 {
-		compatible = "zmk,behavior-tap-dance";
-		label = "GREENSHOT";
-		#binding-cells = <0>;
-		tapping-term-ms = <200>;
-		bindings = <&kp PSCRN>, <&kp LA(PSCRN)>;
-        };
+            compatible = "zmk,behavior-tap-dance";
+            label = "GREENSHOT";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&kp PSCRN>, <&kp LA(PSCRN)>;
+            };
  };
 
     combos {
@@ -86,20 +86,20 @@
         
          combo_tab {
             timeout-ms = <50>;
-            key-positions = <10 11>;
+            key-positions = <11 12>;
             bindings = <&kp TAB>;
         }; 
 
 		
 		combo_space {
             timeout-ms = <50>;
-            key-positions = <22 23>;
+            key-positions = <24 25>;
             bindings = <&kp SPACE>;
         };
 
 		combo_capsWord {
             timeout-ms = <50>;
-            key-positions = <10 19>;
+            key-positions = <10 21>;
             bindings = <&caps_word>;
         };
 
@@ -122,7 +122,7 @@ label= "BASE";
 //             ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫
 //             ┃     A     ┃     R     ┃     S     ┃     T     ┃     G     ┃   ┃     M     ┃     N     ┃     E     ┃     I     ┃     O     ┃
 // ┏━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┓
-// ┃   ESC     ┃     Z     ┃     X     ┃     C     ┃     D     ┃     V     ┃   ┃     K     ┃     H     ┃     ,     ┃     .     ┃     /     ┃     \     ┃
+// ┃   GS      ┃     Z     ┃     X     ┃     C     ┃     D     ┃     V     ┃   ┃     K     ┃     H     ┃     ,     ┃     .     ┃     /     ┃     \     ┃
 // ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 //                                     ┃    TAB    ┃    ENTER  ┃    BSPC   ┃   ┃   SPACE   ┃    -      ┃   DEL     ┃
 //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
@@ -131,7 +131,7 @@ label= "BASE";
 
                 &kp Q       &kp W       &kp F       &kp P       &kp B           &kp J       &kp L       &kp U       &kp Y       &kp SQT
                 &mt LGUI A  &mt LALT R  &mt LCTRL S &mt LSHFT T &kp G           &kp M       &mt RSHFT N &mt RCTRL E &mt RALT I  &mt RGUI O
-    &kp ESC       &kp Z       &kp X       &kp C       &kp D      &kp V           &kp K       &kp H       &kp COMMA   &kp DOT     &kp FSLH    &kp BSLH
+    &kp gs       &kp Z       &kp X       &kp C       &kp D      &kp V           &kp K       &kp H       &kp COMMA   &kp DOT     &kp FSLH    &kp BSLH
                                         &mt LCTRL TAB  &lt NAV RET   &kp BSPC       &meh LS(LA(LCTRL)) SPACE  &lt SYM MINUS &kp DEL
                         >;
                 };
@@ -141,7 +141,7 @@ label= "BASE";
 
                 nav_layer {
 // ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
-label= "NAVI"                              ;
+label= "NAV"                              ;
 // ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
 //             ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓   ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓
 //             ┃           ┃           ┃     UP    ┃           ┃     {     ┃   ┃     }     ┃     7     ┃     8     ┃     9     ┃     +     ┃
