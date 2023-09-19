@@ -146,7 +146,7 @@ label= "BASE";
                 &kp Q       &kp W       &kp F       &kp P       &kp B           &kp J       &kp L       &kp U       &kp Y       &kp SQT
                  HRML(A,     	 R,         S,			T)      &kp G          &kp M      HRMR(N,        E,         I,			O)
     &kp DEL       &kp Z       &kp X       &kp C       &kp D      &kp V           &kp K       &kp H       &kp COMMA   &kp DOT     &kp FSLH    &kp BSLH
-                                        &mt LCTRL TAB  &lt NAV RET   &ltq SHT BSPC       &meh LS(LA(LCTRL)) SPACE  &lt SYM MINUS &kp ESC
+                                        &mt LCTRL TAB  &lt NUM RET   &ltq SHT BSPC       &meh LS(LA(LCTRL)) SPACE  &lt SYM MINUS &kp ESC
                         >;
                 };
 
@@ -255,6 +255,9 @@ label= "ADJ"                               ;
 // ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
 
 		shortcut_layer {
+ / ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+label= "SHT"                               ;
+// ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛          
             bindings = <
         //╭──────────┬──────────┬──────────┬───────────┬────────────╮   ╭────────────┬────────────┬──────────┬───────────┬──────────╮
         //│  QUIT    │  X TAB   │ FIND/REP │  PRINT    │ BOLD	    │   │ 		     │ ADDRESS 	  │UNDERLINE │           │          │
