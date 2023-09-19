@@ -171,7 +171,7 @@ label= "MAC";
                 &kp Q       &kp W       &kp F       &kp P       &kp B           &kp J       &kp L       &kp U       &kp Y       &kp SQT
                  MHRML(A,     	 R,         S,			T)      &kp G          &kp M      MHRMR(N,        E,         I,			O)
     &kp DEL       &kp Z       &kp X       &kp C       &kp D      &kp V           &kp K       &kp H       &kp COMMA   &kp DOT     &kp FSLH    &kp BSLH
-                                        &kp TAB  &lt NAV RET   &ltq SHT BSPC       &meh LS(LA(LCTRL)) SPACE  &lt SYM MINUS &kp ESC
+                                        &kp TAB  &lt NUM RET   &ltq SHT BSPC       &meh LS(LA(LCTRL)) SPACE  &lt SYM MINUS &kp ESC
                         >;
                 };
 
