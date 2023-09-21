@@ -105,6 +105,18 @@ quick-tap-ms = <125>;
             bindings = <&kp ESC>;
         };
 
+         combo_tab {
+            timeout-ms = <50>;
+            key-positions = <10 11>;
+            bindings = <&kp TAB>;
+        }; 
+
+         combo_del {
+            timeout-ms = <50>;
+            key-positions = <21 22>;
+            bindings = <&kp DEL>;
+        };
+
 		
 		combo_space {
             timeout-ms = <50>;
@@ -114,7 +126,7 @@ quick-tap-ms = <125>;
 
 		combo_capsWord {
             timeout-ms = <50>;
-            key-positions = <10 11>;
+            key-positions = <10 19>;
             bindings = <&caps_word>;
         };
 
