@@ -198,11 +198,11 @@ label= "NUM"                              ;
 
 
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
-        //│ `        │  ~       │  |       │    =     │          │   │          │ 7        │ 8        │ 9        │          │
-            &kp GRAVE  &kp TILDE  &kp PIPE  &kp EQUAL    &none           &none     &kp N7     &kp N8     &kp N9      &trans
+        //│ `        │  ~       │  |       │    =     │  PSE FWD │   │          │ 7        │ 8        │ 9        │          │
+            &kp GRAVE  &kp TILDE  &kp PIPE  &kp EQUAL  &kp LA(RIGHT)    &none     &kp N7     &kp N8     &kp N9      &trans
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│   /      │   *      │  +       │  -       |          |   |          │ 4        │  5       │  6       │         │
-        HRML(KP_DIVIDE, KP_MULTIPLY, PLUS,	  MINUS)   &none        &none     &kp N4     &kp N5     &kp N6     &kp DOT 
+        //│   /      │   *      │  +       │  -       |  PSE BCK |   |          │ 4        │  5       │  6       │     .    │
+        HRML(KP_DIVIDE, KP_MULTIPLY, PLUS,	  MINUS) &kp LA(LEFT)  &none     &kp N4     &kp N5     &kp N6     &kp DOT 
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│  BSPC    │          │  CAPS	   │    _     │          │   │          │ 1        │  2       │  3       │         │
 &trans      &kp BSPC    &none	  &kp CAPS   &kp UNDER  &none           &none     &kp N1     &kp N2      &kp N3    &trans    &trans
