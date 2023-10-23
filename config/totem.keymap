@@ -150,7 +150,7 @@ label= "BASE";
 // ┏━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┓
 // ┃   DEL     ┃     Z     ┃     X     ┃     C     ┃     D     ┃     V     ┃   ┃     K     ┃     H     ┃     ,     ┃     .     ┃     /     ┃     \     ┃
 // ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
-//                                     ┃    TAB    ┃    ENTER  ┃    BSPC   ┃   ┃   SPACE   ┃    -      ┃   ESC     ┃
+//                                     ┃    ESC    ┃    ENTER  ┃    BSPC   ┃   ┃   SPACE   ┃    TAB    ┃  CapsWord ┃
 //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
  bindings = <
 // ╷           ╷           ╷           ╷           ╷           ╷           ╷   ╷           ╷           ╷           ╷           ╷           ╷           ╷
@@ -158,7 +158,7 @@ label= "BASE";
                 &kp Q       &kp W       &kp F       &kp P       &kp B           &kp J       &kp L       &kp U       &kp Y       &kp SQT
                  HRML(A,     	 R,         S,			T)      &kp G          &kp M      HRMR(N,        E,         I,			O)
     &kp DEL       &kp Z       &kp X       &kp C       &kp D      &kp V           &kp K       &kp H       &kp COMMA   &kp DOT     &kp FSLH    &kp BSLH
-                                        &mt LCTRL TAB  &lt NUM RET   &ltq SHT BSPC       &meh LS(LA(LCTRL)) SPACE  &lt SYM MINUS &kp ESC
+                                        &mt LCTRL ESC  &lt NUM RET   &ltq SHT BSPC       &meh LS(LA(LCTRL)) SPACE  &lt SYM TAB &caps_word 
                         >;
                 };
 
@@ -175,7 +175,7 @@ label= "MAC";
 // ┏━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┓
 // ┃   DEL     ┃     Z     ┃     X     ┃     C     ┃     D     ┃     V     ┃   ┃     K     ┃     H     ┃     ,     ┃     .     ┃     /     ┃     \     ┃
 // ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
-//                                     ┃    TAB    ┃    ENTER  ┃    BSPC   ┃   ┃   SPACE   ┃    -      ┃   ESC     ┃
+//                                     ┃    ESC    ┃    ENTER  ┃    BSPC   ┃   ┃   SPACE   ┃   TAB     ┃  CapsWord ┃     
 //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
  bindings = <
 // ╷           ╷           ╷           ╷           ╷           ╷           ╷   ╷           ╷           ╷           ╷           ╷           ╷           ╷
@@ -183,7 +183,7 @@ label= "MAC";
                 &kp Q       &kp W       &kp F       &kp P       &kp B           &kp J       &kp L       &kp U       &kp Y       &kp SQT
                  MHRML(A,     	 R,         S,			T)      &kp G          &kp M      MHRMR(N,        E,         I,			O)
     &kp DEL       &kp Z       &kp X       &kp C       &kp D      &kp V           &kp K       &kp H       &kp COMMA   &kp DOT     &kp FSLH    &kp BSLH
-                                        &kp TAB  &lt NUM RET   &ltq SHT BSPC       &meh LS(LA(LCTRL)) SPACE  &lt SYM MINUS &kp ESC
+                                        &kp ESC  &lt NUM RET   &ltq SHT BSPC       &meh LS(LA(LCTRL)) SPACE  &lt SYM TAB &caps_word 
                         >;
                 };
 
@@ -233,7 +233,7 @@ label= "SYM"                               ;
         //│  BSPC    │          │  {       │  }       │          │   │          │ HOME     │ PAGE DN  │ PAGE UP  │ END      │
 &trans      &kp BSPC     &none      &kp LBRC   &kp RBRC   &none         &none      &kp HOME   &kp PG_DN  &kp PG_UP  &kp END    &trans
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
-                                 &lt ADJ TAB &trans      &trans         &trans      &trans    &trans  
+                                 &lt ADJ ESC &trans      &trans         &trans      &trans    &trans  
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
                         >;
                 };
