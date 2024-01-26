@@ -1,3 +1,4 @@
+
 //
 //                                                        ▀▀▀▀▀     ▀▀▀▀▀          ▀▀█▀▀
 //                                                        ▄▀▀▀▄  ▄  ▄▀▀▀▄  ▄  ▄▀▀▀▄  █  ▄▀▀▀▄
@@ -16,11 +17,6 @@
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/outputs.h>
 
-// Home row mods macro
-#define HRML(k1,k2,k3,k4) &ht LGUI k1  &ht LALT k2  &ht LCTRL k3 &ht LSHIFT k4
-#define HRMR(k1,k2,k3,k4) &ht LSHFT k1  &ht RCTL k2  &ht RALT k3 &ht RGUI k4
-#define MHRML(k1,k2,k3,k4) &ht LCTRL k1  &ht LALT k2  &ht LGUI k3 &ht LSHIFT k4
-#define MHRMR(k1,k2,k3,k4) &ht LSHFT k1  &ht RGUI k2  &ht RALT k3 &ht RCTL k4
 
 #define BASE 0
 #define MAC 1
@@ -163,7 +159,7 @@ label= "BASE";
 // ╷           ╷           ╷           ╷           ╷           ╷           ╷   ╷           ╷           ╷           ╷           ╷           ╷           ╷
 
                 &kp Q       &kp W       &kp F       &kp P       &kp B           &kp J       &kp L       &kp U       &kp Y       &kp SQT
-                 HRML(A,     	 R,         S,			T)      &kp G          &kp M      HRMR(N,        E,         I,			O)
+                 &mt LGUI A &mt LALT R &mt LCTRL S &mt LSHIFT T &kp G			&kp M &mt LSHIFT N &mt RCTL E &mt LALT I &mt RGUI 
     &kp DEL       &kp Z       &kp X       &kp C       &kp D      &kp V           &kp K       &kp H       &kp COMMA   &kp DOT     &kp FSLH    &kp BSLH
                                         &lt ADJ ESC  &td_lt   &ltq SHT BSPC       &meh LS(LA(LCTRL)) SPACE  &lt SYM TAB &caps_word 
                         >;
@@ -188,7 +184,7 @@ label= "MAC";
 // ╷           ╷           ╷           ╷           ╷           ╷           ╷   ╷           ╷           ╷           ╷           ╷           ╷           ╷
 
                 &kp Q       &kp W       &kp F       &kp P       &kp B           &kp J       &kp L       &kp U       &kp Y       &kp SQT
-                 MHRML(A,     	 R,         S,			T)      &kp G          &kp M      MHRMR(N,        E,         I,			O)
+                &mt LCTRL A &mt LALT R &mt LGUI S &mt LSHIFT T &kp G			&kp M &mt LSHIFT N &mt RGUI E &mt LALT I &mt RCTRL
     &kp DEL       &kp Z       &kp X       &kp C       &kp D      &kp V           &kp K       &kp H       &kp COMMA   &kp DOT     &kp FSLH    &kp BSLH
                                         &lt ADJ ESC  &lt NUM RET   &mt LGUI BSPC       &meh LS(LA(LCTRL)) SPACE  &lt SYM TAB &caps_word 
                         >;
@@ -209,7 +205,7 @@ label= "NUM"                              ;
             &kp GRAVE  &kp TILDE  &kp PIPE  &kp EQUAL  &kp LA(RIGHT)    &none     &kp N7     &kp N8     &kp N9      &trans
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│   /      │   *      │  +       │  -       |  PSE BCK |   |          │ 4        │  5       │  6       │     .    │
-        HRML(KP_DIVIDE, KP_MULTIPLY, PLUS,	  MINUS) &kp LA(LEFT)  &none     &kp N4     &kp N5     &kp N6     &kp DOT 
+        &mt LGUI A &mt LALT R &mt LCTRL S &mt LSHIFT T &kp LA(LEFT)  &none     &kp N4     &kp N5     &kp N6     &kp DOT 
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│          │          │  CAPS	   │    _     │          │   │          │ 1        │  2       │  3       │         │
 &trans       &none      &none	  &kp CAPS   &kp UNDER  &none           &none     &kp N1     &kp N2      &kp N3    &trans    &trans
@@ -235,7 +231,7 @@ label= "SYM"                               ;
             &kp EXCL   &kp AT     &kp HASH   &kp DLLR   &kp PRCNT      &kp CARET  &kp AMPS   &kp ASTRK  &kp COLON   &kp SEMI
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│  [       │  ]       │  (       │  )       │          │   |          │ LEFT     │ DOWN     │ UP       │ RIGHT    │
-            HRML(LBKT,   RBKT,     LPAR,	   RPAR)    &none         &none      &kp LARW   &kp DARW   &kp UARW   &kp RARW 
+            &mt LGUI A &mt LALT R &mt LCTRL S &mt LSHIFT T    &none         &none      &kp LARW   &kp DARW   &kp UARW   &kp RARW 
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│          │          │  {       │  }       │          │   │          │ HOME     │ PAGE DN  │ PAGE UP  │ END      │
 &trans       &none      &none      &kp LBRC   &kp RBRC   &none         &none      &kp HOME   &kp PG_DN  &kp PG_UP  &kp END    &trans
