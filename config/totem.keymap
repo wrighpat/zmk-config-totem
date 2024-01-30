@@ -143,10 +143,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-         &kp Q       &kp W       &kp F        &kp P         &kp B            &kp J                     &kp L         &kp U             &kp Y       &kp SQT
-         &mt LGUI A  &mt LALT R  &mt LCTRL S  &mt LSHIFT T  &kp G            &kp M                     &mt LSHIFT N  &mt LEFT_SHIFT E  &mt LALT I  &mt RGUI O
-&kp DEL  &kp Z       &kp X       &kp C        &kp D         &kp V            &kp K                     &kp H         &kp COMMA         &kp DOT     &kp FSLH    &kp BSLH
-                                 &lt ADJ ESC  &td_lt        &ltq SHT BSPC    &meh LS(LA(LCTRL)) SPACE  &lt SYM TAB   &caps_word
+         &kp Q           &kp W           &kp F        &kp P             &kp B            &kp J                     &kp L              &kp U        &kp Y            &kp SQT
+         &ht LEFT_GUI A  &ht LEFT_ALT R  &ht LCTRL S  &ht LEFT_SHIFT T  &kp G            &kp M                     &ht RIGHT_SHIFT N  &ht RCTRL E  &ht RIGHT_ALT I  &ht RIGHT_GUI O
+&kp DEL  &kp Z           &kp X           &kp C        &kp D             &kp V            &kp K                     &kp H              &kp COMMA    &kp DOT          &kp FSLH         &kp BSLH
+                                         &lt ADJ ESC  &lt 2 RET         &ltq SHT BSPC    &meh LS(LA(LCTRL)) SPACE  &lt SYM TAB        &caps_word
             >;
         };
 
@@ -230,7 +230,7 @@
 
             bindings = <
         &sys_reset   &bt BT_CLR  &out OUT_TOG  &trans  &trans    &trans  &kp F7  &kp F8  &kp F9  &kp F12
-        &bootloader  &bt BT_NXT  &tog MAC      &trans  &trans    &trans  &kp F4  &kp F5  &kp F6  &kp F11
+        &bootloader  &bt BT_NXT  &tog 1        &trans  &trans    &trans  &kp F4  &kp F5  &kp F6  &kp F11
 &trans  &trans       &bt BT_PRV  &trans        &trans  &trans    &trans  &kp F1  &kp F2  &kp F3  &kp F10  &trans
                                  &trans        &trans  &trans    &trans  &trans  &trans
             >;
