@@ -145,7 +145,7 @@
             bindings = <
          &kp Q           &kp W           &kp F        &kp P             &kp B            &kp J                     &kp L              &kp U        &kp Y            &kp SQT
          &ht LEFT_GUI A  &ht LEFT_ALT R  &ht LCTRL S  &ht LEFT_SHIFT T  &kp G            &kp M                     &ht RIGHT_SHIFT N  &ht RCTRL E  &ht RIGHT_ALT I  &ht RIGHT_GUI O
-&kp DEL  &kp Z           &kp X           &kp C        &kp D             &kp V            &kp K                     &kp H              &kp COMMA    &kp DOT          &kp FSLH         &kp BSLH
+&kp DEL  &kp Z           &kp X           &kp C        &kp D             &kp V            &kp K                     &kp H              &kp COMMA    &kp DOT          &kp FSLH         &kp MINUS
                                          &lt ADJ ESC  &lt 2 RET         &ltq SHT BSPC    &meh LS(LA(LCTRL)) SPACE  &lt SYM TAB        &caps_word
             >;
         };
@@ -186,10 +186,10 @@
             // ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
 
             bindings = <
-        &kp GRAVE   &kp TILDE   &kp PIPE     &kp EQUAL     &kp LA(RIGHT)    &none   &kp N7  &kp N8  &kp N9  &trans
-        &ht LGUI KP_DIVIDE &ht LALT KP_MULTIPLY  &ht LCTRL PLUS  &ht LSHIFT MINUS  &kp LA(LEFT)     &none   &kp N4  &kp N5  &kp N6  &kp DOT
-&trans  &none       &none       &kp CAPS     &kp UNDER     &none            &none   &kp N1  &kp N2  &kp N3  &trans   &trans
-                                &trans       &trans        &trans           &trans  &kp N0  &kp BSPC
+        &kp GRAVE           &kp TILDE             &kp PIPE        &kp EQUAL         &kp LA(RIGHT)    &none   &kp N7  &kp N8  &kp N9  &trans
+        &ht LGUI KP_DIVIDE  &ht LALT KP_MULTIPLY  &ht LCTRL PLUS  &ht LSHIFT MINUS  &kp LA(LEFT)     &none   &kp N4  &kp N5  &kp N6  &kp DOT
+&trans  &none               &none                 &kp CAPS        &kp UNDER         &none            &none   &kp N1  &kp N2  &kp N3  &kp BACKSLASH  &kp BSPC
+                                                  &trans          &trans            &trans           &trans  &kp N0  &none
             >;
         };
 
@@ -203,10 +203,10 @@
             // ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
 
             bindings = <
-        &kp EXCL    &kp AT      &kp HASH     &kp DLLR      &kp PRCNT    &kp CARET  &kp AMPS        &kp ASTRK       &kp COLON     &kp SEMI
-        &mt LGUI A  &mt LALT R  &mt LCTRL S  &mt LSHIFT T  &none        &none      &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW
-&trans  &none       &none       &kp LBRC     &kp RBRC      &none        &none      &kp HOME        &kp PG_DN       &kp PG_UP     &kp END          &trans
-                                &trans       &trans        &trans       &trans     &trans          &trans
+        &kp EXCL               &kp AT                  &kp HASH                &kp DLLR                      &kp PRCNT    &kp CARET  &kp AMPS        &kp ASTRK       &kp COLON     &kp SEMI
+        &mt LGUI LEFT_BRACKET  &mt LALT RIGHT_BRACKET  &mt LEFT_PARENTHESIS S  &mt LSHIFT RIGHT_PARENTHESIS  &none        &none      &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW
+&trans  &none                  &none                   &kp LBRC                &kp RBRC                      &none        &none      &kp HOME        &kp PG_DN       &kp PG_UP     &kp END          &trans
+                                                       &trans                  &trans                        &trans       &trans     &trans          &trans
             >;
         };
 
