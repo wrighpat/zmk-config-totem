@@ -186,10 +186,10 @@
             // ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
 
             bindings = <
-        &kp GRAVE           &kp TILDE             &kp PIPE        &kp EQUAL         &kp LA(RIGHT)    &none   &kp N7  &kp N8  &kp N9  &trans
-        &ht LGUI KP_DIVIDE  &ht LALT KP_MULTIPLY  &ht LCTRL PLUS  &ht LSHIFT MINUS  &kp LA(LEFT)     &none   &kp N4  &kp N5  &kp N6  &kp DOT
-&trans  &none               &none                 &kp CAPS        &kp UNDER         &none            &none   &kp N1  &kp N2  &kp N3  &kp BACKSLASH  &kp BSPC
-                                                  &trans          &trans            &trans           &trans  &kp N0  &none
+        &kp GRAVE           &kp TILDE             &kp PIPE        &kp EQUAL         &kp LA(RIGHT)    &none   &kp N7  &kp N8         &kp N9  &trans
+        &ht LGUI KP_DIVIDE  &ht LALT KP_MULTIPLY  &ht LCTRL PLUS  &ht LSHIFT MINUS  &kp LA(LEFT)     &none   &kp N4  &kp N5         &kp N6  &kp DOT
+&trans  &none               &none                 &kp CAPS        &kp UNDER         &none            &none   &kp N1  &kp N2         &kp N3  &kp BACKSLASH  &kp RET
+                                                  &trans          &trans            &trans           &trans  &kp N0  &kp BACKSPACE
             >;
         };
 
@@ -203,10 +203,10 @@
             // ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
 
             bindings = <
-        &kp EXCL               &kp AT                  &kp HASH                &kp DLLR                      &kp PRCNT    &kp CARET  &kp AMPS        &kp ASTRK       &kp COLON     &kp SEMI
-        &mt LGUI LEFT_BRACKET  &mt LALT RIGHT_BRACKET  &mt LEFT_PARENTHESIS S  &mt LSHIFT RIGHT_PARENTHESIS  &none        &none      &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW
-&trans  &none                  &none                   &kp LBRC                &kp RBRC                      &none        &none      &kp HOME        &kp PG_DN       &kp PG_UP     &kp END          &trans
-                                                       &trans                  &trans                        &trans       &trans     &trans          &trans
+        &kp EXCL               &kp AT                  &kp HASH                    &kp DLLR                      &kp PRCNT    &kp CARET  &kp AMPS        &kp ASTRK       &kp COLON     &kp SEMI
+        &mt LGUI LEFT_BRACKET  &mt LALT RIGHT_BRACKET  &mt LCTRL LEFT_PARENTHESIS  &mt LSHIFT RIGHT_PARENTHESIS  &none        &none      &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW
+&trans  &none                  &none                   &kp LBRC                    &kp RBRC                      &none        &none      &kp HOME        &kp PG_DN       &kp PG_UP     &kp END          &trans
+                                                       &trans                      &trans                        &trans       &trans     &trans          &trans
             >;
         };
 
