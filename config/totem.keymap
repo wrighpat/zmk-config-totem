@@ -188,7 +188,7 @@
             bindings = <
         &kp GRAVE           &kp TILDE             &kp PIPE        &kp EQUAL         &kp LA(RIGHT)    &none   &kp N7  &kp N8         &kp N9  &trans
         &ht LGUI KP_DIVIDE  &ht LALT KP_MULTIPLY  &ht LCTRL PLUS  &ht LSHIFT MINUS  &kp LA(LEFT)     &none   &kp N4  &kp N5         &kp N6  &kp DOT
-&trans  &none               &none                 &kp CAPS        &kp UNDER         &none            &none   &kp N1  &kp N2         &kp N3  &kp BACKSLASH  &kp RET
+&trans  &kp LS(LC(LG(Z)))   &kp LS(LC(LG(X)))     &kp CAPS        &kp UNDER         &none            &none   &kp N1  &kp N2         &kp N3  &kp BACKSLASH  &kp RET
                                                   &trans          &trans            &trans           &trans  &kp N0  &kp BACKSPACE
             >;
         };
@@ -218,7 +218,6 @@
             label = "ADJ";
 
             // ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
-
             //             ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓   ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓
             //             ┃ PROFILE 0 ┃ PROFILE 1 ┃ PROFILE 2 ┃ PROFILE 3 ┃ PROFILE 4 ┃   ┃           ┃    F7     ┃    F8     ┃    F9     ┃    F12    ┃
             //             ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫
@@ -229,17 +228,13 @@
             //                                     ┃           ┃           ┃           ┃   ┃           ┃           ┃           ┃
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
-
             bindings = <
-        &bt BT_SEL 0   &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &trans  &kp F7  &kp F8  &kp F9  &kp F12
-        &kp LGUI       &kp LALT      &kp LCTL      &kp LSFT      &trans 	     &trans  &kp F4  &kp F5  &kp F6  &kp F11
- &trans	&bootloader    &sys_reset    &bt BT_CLR    &out OUT_TOG  &tog 1    	     &trans  &kp F1  &kp F2  &kp F3  &kp F10  &trans
-                                 		              &trans  &trans  &trans   	 &trans  &trans  &trans
-
+        &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &trans  &kp F7  &kp F8  &kp F9  &kp F12
+        &kp LGUI      &kp LALT      &kp LCTL      &kp LSFT      &trans          &trans  &kp F4  &kp F5  &kp F6  &kp F11
+&trans  &bootloader   &sys_reset    &bt BT_CLR    &out OUT_TOG  &tog 1          &trans  &kp F1  &kp F2  &kp F3  &kp F10  &trans
+                                    &trans        &trans        &trans          &trans  &trans  &trans
             >;
         };
-
-
 
         // ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
 
